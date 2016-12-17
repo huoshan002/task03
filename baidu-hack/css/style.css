@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font: 12px arial;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.middle-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    min-width: 800px;
+}
+
+/*顶部菜单*/
+.top-bar ul li a:hover, .right-box .login-btn:hover, .right-box .set-btn:hover {
+    color: #00c;
+}
+
+.top-bar {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 0 5px 0;
+    padding: 0 12px 0 0;
+    min-width: 600px;
+}
+
+.top-bar .right-box {
+    float: right;
+}
+
+.top-bar ul {
+    float: left;
+}
+
+.top-bar ul li {
+    float: left;
+}
+
+.top-bar ul li a {
+    float: left;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    margin-right: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.right-box .login-btn, .set-btn {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+.right-box .more-btn {
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.main {
+    position: relative;
+    top: 38.2%;
+    margin-top: -191px;
+}
+
+/*搜索框*/
+.search-wrap {
+    text-align: center;
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.search-input {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+}
+
+.search-input .form-control {
+    padding: 0 0 0 7px;
+    border: 1px solid #b8b8b8;
+    border-right-width: 0;
+    background: #fff;
+    display: inline-block;
+    width: 539px;
+    height: 34px;
+    font-size: 16px;
+    overflow: hidden;
+    outline: none;
+    line-height: 34px\9;
+}
+
+.search-input input:focus {
+    border-color: #4791ff;
+}
+
+.camera-btn {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    width: 18px;
+    height: 19px;
+    display: block;
+    background-image: url("../images/camera_new_679c15cc.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.camera-btn:hover {
+    background-position: 0 -20px;
+}
+
+.search-btn-wrap {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: top;
+}
+
+.search-btn {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: none;
+    border-bottom: 1px solid #2d78f4;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: #317ef3;
+}
+
+/*侧边栏*/
+.sidebar {
+    width: 85px;
+    height: 100%;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.sidebar .title {
+    display: block;
+    color: #333;
+    text-align: center;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    font-size: 13px;
+    cursor: default;
+}
+
+.sidebar .conwrap a, .sidebar .pmore a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.sidebar .conwrap a:hover {
+    text-decoration: underline;
+}
+
+.sidebar .conwrap span {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../images/bdbri_icons_2e35e84b.png) no-repeat;
+    cursor: pointer;
+}
+
+.sidebar .conwrap .yinyue {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+.sidebar .conwrap .tupian {
+    background-position: -112px 0;
+}
+
+.sidebar .conwrap .zhidao {
+    background-position: -36px 0;
+}
+
+.sidebar .conwrap .wenku {
+    background-position: -148px 0;
+}
+
+.sidebar .conwrap .fengyunbang {
+    background-position: -184px 0;
+}
+
+.sidebar .conwrap .tuiguang {
+    width: 40px;
+    background-position: -220px 0;
+}
+
+.sidebar .pmore {
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    overflow: hidden;
+}
+
+/*页面底部*/
+.footer {
+    height: 100px;
+    position: absolute;
+    bottom: 23px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    +text-align: left;
+}
+
+.footer-wrap {
+    width: 748px;
+    margin: 0 auto;
+}
+
+.footer .left-con, .footer .right-con {
+    float: left;
+}
+
+.footer .qr-wrap {
+    float: left;
+    color: #666;
+    margin-left: 33px;
+}
+
+.footer .qr-wrap .qrcode {
+    float: left;
+}
+
+.footer .qr-wrap span {
+    float: left;
+    margin-left: 12px;
+}
+
+.footer .qr-wrap span b {
+    color: #666;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.footer .right-con {
+    position: relative;
+    margin-left: 33px;
+    color: #999;
+    text-align: left;
+    top: -6px;
+    vertical-align: top;
+}
+
+.footer .right-con a {
+    color: #999;
+}
+
+.footer .right-con .text {
+    line-height: 26px;
+    +display: block;
+}
+
+.footer .right-con .t1 a {
+    display: inline-block;
+    margin-right: 62px;
+    _margin-right: 50px;
+}
+
+.footer .right-con .t2 {
+    _padding: 3px 0;
+}
+
+.c-icon-icrlogo, .c-icon-jgwablogo {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url(../images/icons_0e814c16.png) no-repeat;
+}
+
+.c-icon-icrlogo {
+    background-position: -600px -96px;
+    position: relative;
+    top: 3px;
+}
+
+.c-icon-jgwablogo {
+    background-position: -623px -96px;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道 - HACK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if IE]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+
+    <header class="top-bar clearfix">
+        <nav class="right-box">
+            <ul>
+                <li><a href="javascript:;">糯米</a></li>
+                <li><a href="javascript:;">新闻</a></li>
+                <li><a href="javascript:;">hao123</a></li>
+                <li><a href="javascript:;">地图</a></li>
+                <li><a href="javascript:;">视频</a></li>
+                <li><a href="javascript:;">贴吧</a></li>
+                <li><a href="javascript:;">贴吧</a></li>
+            </ul>
+
+            <a href="javascript:;" class="login-btn">登录</a>
+            <a href="javascript:;" class="set-btn">设置</a>
+
+            <a href="javascript:;" class="more-btn" id="more_btn">更多产品</a>
+        </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <span class="title">
+            更多产品
+        </span>
+
+        <div class="conwrap">
+            <a href="javascript:;">
+                <span class="yinyue"></span>
+                音乐
+            </a>
+            <a href="javascript:;">
+                <span class="tupian"></span>
+                图片
+            </a>
+            <a href="javascript:;">
+                <span class="zhidao"></span>
+                知道
+            </a>
+            <a href="javascript:;">
+                <span class="wenku"></span>
+                文库
+            </a>
+            <a href="javascript:;">
+                <span class="fengyunbang"></span>
+                风云榜
+            </a>
+            <a href="javascript:;">
+                <span class="tuiguang"></span>
+                百度推广
+            </a>
+        </div>
+        <div class="pmore">
+            <a href="javascript:;">全部产品&gt;&gt;</a>
+        </div>
+    </div>
+
+    <section class="middle-wrap">
+        <main class="main">
+            <div class="logo">
+                <img src="images/bd_logo1.png" alt="logo" width="270" height="129">
+            </div>
+            <form action="#" method="post">
+                <div class="search-wrap">
+                    <span class="search-input">
+                        <input type="text" class="form-control">
+                        <a href="javascript:;" class="camera-btn"></a>
+                    </span>
+                    <span class="search-btn-wrap">
+                        <input type="submit" class="search-btn" value="百度一下">
+                    </span>
+                </div>
+            </form>
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-wrap">
+
+                <div class="left-con">
+                    <div class="qr-wrap">
+                        <div class="qrcode">
+                            <img src="images/nuomi_510f7472.png" alt="">
+                        </div>
+                <span>
+                    <p><b>手机百度</b></p>
+                    <p>快人一步</p>
+                </span>
+                    </div>
+
+                    <div class="qr-wrap">
+                        <div class="qrcode">
+                            <img src="images/zbios_62c636fe.png" alt="">
+                        </div>
+                <span>
+                    <p><b>百度糯米</b></p>
+                    <p>一元大餐</p>
+                </span>
+                    </div>
+                </div>
+
+                <div class="right-con">
+                    <p class="text t1">
+                        <a href="javascript:;" target="_blank" title="把百度设为首页">把百度设为首页</a>
+                        <a href="javascript:;" target="_blank" title="关于百度">关于百度</a>
+                        <a href="javascript:;" target="_blank" title="About  Baidu">About&nbsp;&nbsp;Baidu</a>
+                    </p>
+                    <p class="text t2">©2016&nbsp;Baidu&nbsp;<a href="javascript:;">使用百度前必读</a>&nbsp;
+                        <a href="javascript:;">意见反馈</a>&nbsp;京ICP证030173号&nbsp;<i class="c-icon-icrlogo"></i>
+                    </p>
+                    <p class="text t2"><i class="c-icon-jgwablogo"></i>京公网安备11000002000001号</p>
+                </div>
+
+            </div>
+
+
+        </footer>
+    </section>
+
+</div>
+
+
+<script>
+    var morebtn = document.getElementById("more_btn");
+    var sidebar = document.getElementById("sidebar");
+    if(morebtn.addEventListener){
+        morebtn.addEventListener('mouseover',function () {
+            sidebar.style.display = 'block';
+        });
+        sidebar.addEventListener('mouseleave',function () {
+            sidebar.style.display = 'none';
+        })
+    }else{
+        morebtn.attachEvent('onmouseover',function () {
+            sidebar.style.display = 'block';
+        });
+        sidebar.attachEvent('onmouseleave',function () {
+            sidebar.style.display = 'none';
+        })
+    }
+
+
+</script>
+
+</body>
+</html>
