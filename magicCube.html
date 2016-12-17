@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Cube</title>
+
+
+    <style type="text/css">
+
+        .stage {
+            -webkit-perspective: 1000px;
+            top: 50%;
+            left: 50%;
+            margin: -159px 0 0 -159px;
+            width: 318px;
+            height: 318px;
+            position: absolute;
+        }
+
+        .cube-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -159px 0 0 -159px;
+            width: 318px;
+            height: 318px;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -webkit-animation: ani 6s linear infinite;
+            -moz-animation: ani 6s linear infinite;
+        }
+
+        .font {
+            position: absolute;
+            width: 318px;
+            height: 318px;
+            -webkit-transform: translatez(159px);
+            -moz-transform: translatez(159px);
+        }
+
+        .font .diamond {
+            width: 106px;
+            height: 106px;
+            float: left;
+            background-color: rgba(0, 255, 255, 0.7);
+            border-radius: 8px;
+        }
+
+        .back {
+            position: absolute;
+            width: 318px;
+            height: 318px;
+            -webkit-transform: translatez(-159px);
+            -moz-transform: translatez(-159px);
+        }
+
+        .back .diamond {
+            width: 106px;
+            height: 106px;
+            float: left;
+            background-color: rgba(153, 204, 255, 0.7);
+            border-radius: 8px;
+        }
+
+        .left {
+            position: absolute;
+            width: 318px;
+            height: 318px;
+            -webkit-transform: rotateY(-90deg) translatez(-159px);
+            -moz-transform: rotateY(-90deg) translatez(-159px);
+        }
+
+        .left .diamond {
+            width: 106px;
+            height: 106px;
+            float: left;
+            background-color: rgba(255, 0, 255, 0.7);
+            border-radius: 8px;
+        }
+
+        .right {
+            position: absolute;
+            width: 318px;
+            height: 318px;
+            -webkit-transform: rotateY(90deg) translatez(-159px);
+            -moz-transform: rotateY(90deg) translatez(-159px);
+        }
+
+        .right .diamond {
+            width: 106px;
+            height: 106px;
+            float: left;
+            background-color: rgba(255, 0, 255, 0.7);
+            border-radius: 8px;
+        }
+
+        .up {
+            position: absolute;
+            width: 318px;
+            height: 318px;
+            -webkit-transform: rotateX(90deg) translatez(-159px);
+            -moz-transform: rotateX(90deg) translatez(-159px);
+        }
+
+        .up .diamond {
+            width: 106px;
+            height: 106px;
+            float: left;
+            background-color: rgba(255, 40, 35, 0.7);
+            border-radius: 8px;
+        }
+
+        .down {
+            position: absolute;
+            width: 318px;
+            height: 318px;
+            -webkit-transform: rotateX(-90deg) translatez(-159px);
+            -moz-transform: rotateX(-90deg) translatez(-159px);
+        }
+
+        .down .diamond {
+            width: 106px;
+            height: 106px;
+            float: left;
+            background-color: rgba(30, 255, 83, 0.7);
+            border-radius: 8px;
+        }
+
+        @-webkit-keyframes ani {
+
+            0% {
+                -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                -webkit-transform-origin: center center;
+            }
+            100% {
+                -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+                -webkit-transform-origin: center center;
+            }
+        }
+
+        @-moz-keyframes ani {
+
+            0% {
+                -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                -webkit-transform-origin: center center;
+            }
+            100% {
+                -webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+                -webkit-transform-origin: center center;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="stage">
+    <div class="cube-box">
+
+        <div class="font">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+        </div>
+
+        <div class="back">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+        </div>
+
+        <div class="left">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+        </div>
+
+        <div class="right">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+        </div>
+
+        <div class="up">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+        </div>
+
+        <div class="down">
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+            <span class="diamond"></span>
+        </div>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
